@@ -1,11 +1,22 @@
 body{
-  background-color:rgb(255, 79, 79)
+  background-color:#7349E9;
 }
 h1{
-  color:darkblue;
+  color:#f0f3ff;
   border-style:hidden hidden solid hidden;
+  border-color:#f0f3ff;
   text-align:center;
+font-family: cursive;
+
 }
-#title {
-color:yellow;
+h2 {
+  color:lime;
+  font-family: cursive;
+  margin-left: 40px;
+}
+
+p {
+  font-family: cursive;
+  color: lime;
+  margin-left: 25px;
 }
