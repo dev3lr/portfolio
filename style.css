@@ -42,6 +42,7 @@ h3{
 	align-items: center;
 	max-width:80rem;
 	margin: 0 auto;
+	padding:2rem;
 }
 
 .container>* {
@@ -95,7 +96,7 @@ h3{
 
 .btn[disabled]:hover{
      cursor:not-allowed;
-	 box-shadow: :none;
+	 box-shadow: none;
 	 transform:none;
 
 }
