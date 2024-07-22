@@ -110,7 +110,6 @@ let questions = [
 
 const CORRECT_BONUS=10;
 const MAX_QUESTIONS=9;
-
 startGame=()=> {
     questionCounter=0;
     score=0;
@@ -119,6 +118,7 @@ startGame=()=> {
 
     getNewQuestion();
 };
+
 
 getNewQuestion = () => {
     if(availableQuestions.length==0 ||questionCounter>=MAX_QUESTIONS){
