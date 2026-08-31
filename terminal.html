@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Ayush | Terminal</title>
+
+    <link rel="stylesheet" href="terminal.css">
+
+</head>
+
+
+<body>
+
+    <main class="page">
+
+        <div class="terminal">
+
+            <!-- TERMINAL HEADER -->
+
+            <header class="terminal-header">
+
+                <div class="terminal-buttons">
+
+                    <span class="dot red-dot"></span>
+                    <span class="dot yellow-dot"></span>
+                    <span class="dot green-dot"></span>
+
+                </div>
+
+                <div class="terminal-title">
+                    ayush@portfolio:~
+                </div>
+
+            </header>
+
+
+            <!-- TERMINAL BODY -->
+
+            <div class="terminal-body">
+
+
+              
+
+                <div class="command">
+
+                    <span class="red-text">ayush</span><span class="blue-text">@portfolio</span><span class="white-text">:~$</span>
+
+                    <span class="command-name">
+                        ls
+                    </span>
+
+                </div>
+
+
+                <!-- NAVIGATION -->
+
+                <nav class="terminal-menu">
+
+                    <button onclick="openPanel('projects')">
+                        <span class="blue-text">[</span>
+                        projects/
+                        <span class="blue-text">]</span>
+                    </button>
+
+
+                    <button onclick="openPanel('experience')">
+                        <span class="blue-text">[</span>
+                        experience/
+                        <span class="blue-text">]</span>
+                    </button>
+
+
+                    <button onclick="openPanel('certificates')">
+                        <span class="blue-text">[</span>
+                        certificates/
+                        <span class="blue-text">]</span>
+                    </button>
+
+
+                    <button onclick="openPanel('adventure')">
+                        <span class="blue-text">[</span>
+                        adventure/
+                        <span class="blue-text">]</span>
+                    </button>
+
+
+                    <button onclick="openPanel('skills')">
+                        <span class="blue-text">[</span>
+                        skills/
+                        <span class="blue-text">]</span>
+                    </button>
+
+
+                    <button onclick="openPanel('contact')">
+                        <span class="blue-text">[</span>
+                        contact/
+                        <span class="blue-text">]</span>
+                    </button>
+
+
+                    <!-- EXTERNAL LINKS -->
+
+                    <a
+                        href="https://github.com/dev3lr"
+                        target="_blank"
+                        class="terminal-link"
+                    >
+                        <span class="red-text">[</span>
+                        GitHub ↗
+                        <span class="red-text">]</span>
+                    </a>
+
+
+                    <a
+                        href="https://www.linkedin.com/in/ayush-dwivedi-268807307"
+                        target="_blank"
+                        class="terminal-link"
+                    >
+                        <span class="red-text">[</span>
+                        LinkedIn ↗
+                        <span class="red-text">]</span>
+                    </a>
+
+                </nav>
+
+
+
+                <!-- OUTPUT -->
+
+                <section
+                    id="terminal-output"
+                    class="terminal-output"
+                >
+
+                    <div class="default-output">
+
+                        <p class="output-text">
+                            Welcome to my portfolio.
+                        </p>
+
+                        <p class="output-muted">
+                            Select a directory above to explore.
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- PROMPT -->
+
+                <div class="prompt">
+
+                    <span class="red-text">
+                        ayush
+                    </span><span class="blue-text">@portfolio</span><span class="white-text">:~$</span>
+
+                    <span class="cursor">_</span>
+
+                </div>
+
+
+
+                <!-- BACK -->
+
+                <a
+                    href="index.html"
+                    class="back"
+                >
+                    ← cd ..
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="terminal.js"></script>
+
+</body>
+
+</html>

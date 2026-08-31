@@ -1,0 +1,958 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+
+    background: #0b0d0f;
+
+    color: #d8d8d8;
+
+    font-family: "Courier New", Courier, monospace;
+
+    min-height: 100vh;
+
+}
+
+
+/* =========================================
+   PAGE
+========================================= */
+
+.page {
+
+    width: 90%;
+
+    max-width: 1050px;
+
+    margin: auto;
+
+    padding: 50px 0;
+
+}
+
+
+/* =========================================
+   TERMINAL
+========================================= */
+
+.terminal {
+
+    width: 100%;
+
+    background: #111722;
+
+    border: 1px solid #344050;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.35);
+
+}
+
+
+/* =========================================
+   TERMINAL HEADER
+========================================= */
+
+.terminal-header {
+
+    height: 44px;
+
+    background: #1b2636;
+
+    border-bottom: 1px solid #344050;
+
+    display: flex;
+
+    align-items: center;
+
+    position: relative;
+
+}
+
+
+/* =========================================
+   TERMINAL DOTS
+========================================= */
+
+.terminal-buttons {
+
+    display: flex;
+
+    gap: 8px;
+
+    padding-left: 15px;
+
+}
+
+
+.dot {
+
+    width: 11px;
+
+    height: 11px;
+
+    border-radius: 50%;
+
+}
+
+
+.red-dot {
+
+    background: #e05252;
+
+}
+
+
+.yellow-dot {
+
+    background: #d4a83e;
+
+}
+
+
+.green-dot {
+
+    background: #42a85f;
+
+}
+
+
+/* =========================================
+   TERMINAL TITLE
+========================================= */
+
+.terminal-title {
+
+    position: absolute;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: #8994a3;
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================
+   TERMINAL BODY
+========================================= */
+
+.terminal-body {
+
+    padding: 40px;
+
+}
+
+
+/* =========================================
+   PROFILE
+========================================= */
+
+.profile {
+
+    text-align: center;
+
+    margin-bottom: 40px;
+
+}
+
+
+/* =========================================
+   PROFILE TERMINAL
+========================================= */
+
+.profile-terminal {
+
+    width: 150px;
+
+    margin: auto;
+
+    border: 1px solid #344050;
+
+    background: #0d131c;
+
+}
+
+
+.mini-header {
+
+    height: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-bottom: 1px solid #344050;
+
+    color: #788494;
+
+    font-size: 10px;
+
+}
+
+
+.profile-terminal img {
+
+    display: block;
+
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+
+}
+
+
+/* =========================================
+   NAME
+========================================= */
+
+.profile h1 {
+
+    margin-top: 18px;
+
+    color: #eeeeee;
+
+    font-size: 38px;
+
+    font-weight: 400;
+
+}
+
+
+.role {
+
+    margin-top: 7px;
+
+    color: #4da6ed;
+
+    font-size: 15px;
+
+}
+
+
+.role span {
+
+    color: #d8d8d8;
+
+    margin: 0 5px;
+
+}
+
+
+/* =========================================
+   COLORS
+========================================= */
+
+.red-text {
+
+    color: #e05252;
+
+}
+
+
+.blue-text {
+
+    color: #4da6ed;
+
+}
+
+
+.white-text {
+
+    color: #d8d8d8;
+
+}
+
+
+/* =========================================
+   COMMAND
+========================================= */
+
+.command {
+
+    color: #c7cdd4;
+
+    margin-bottom: 18px;
+
+}
+
+
+.command-name {
+
+    color: #d8d8d8;
+
+    margin-left: 8px;
+
+}
+
+
+/* =========================================
+   MENU
+========================================= */
+
+.terminal-menu {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 12px;
+
+    margin-bottom: 35px;
+
+}
+
+
+/* Buttons and external links */
+
+.terminal-menu button,
+.terminal-link {
+
+    font-family: "Courier New", Courier, monospace;
+
+    font-size: 13px;
+
+    background: transparent;
+
+    color: #c8ced4;
+
+    border: 1px solid #344050;
+
+    padding: 13px 10px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+
+}
+
+
+.terminal-menu button:hover,
+.terminal-link:hover {
+
+    color: #ffffff;
+
+    border-color: #4da6ed;
+
+    background: #151d29;
+
+}
+
+
+/* =========================================
+   OUTPUT
+========================================= */
+
+.terminal-output {
+
+    border-top: 1px solid #2c3745;
+
+    padding-top: 30px;
+
+    min-height: 250px;
+
+}
+
+
+.output-text {
+
+    color: #4da6ed;
+
+    margin-bottom: 10px;
+
+}
+
+
+.output-muted {
+
+    color: #7f8995;
+
+}
+
+
+/* =========================================
+   PANEL CONTENT
+========================================= */
+
+.panel-title {
+
+    color: #e05252;
+
+    font-size: 22px;
+
+    font-weight: 400;
+
+    margin-bottom: 20px;
+
+}
+
+
+.panel-text {
+
+    color: #b7bec6;
+
+    line-height: 1.7;
+
+    max-width: 750px;
+
+}
+
+
+.panel-item {
+
+    border-left: 2px solid #344050;
+
+    padding-left: 15px;
+
+    margin-bottom: 22px;
+
+}
+
+
+.panel-item h3 {
+
+    color: #4da6ed;
+
+    font-size: 16px;
+
+    font-weight: 400;
+
+    margin-bottom: 5px;
+
+}
+
+
+.panel-item .date {
+
+    color: #e05252;
+
+    font-size: 12px;
+
+    margin-bottom: 8px;
+
+}
+
+
+/* =========================================
+   CERTIFICATES
+========================================= */
+
+.certificate {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    border-bottom: 1px solid #293441;
+
+    padding: 13px 5px;
+
+}
+
+
+.certificate-name {
+
+    color: #b7bec6;
+
+}
+
+
+.certificate a {
+
+    color: #4da6ed;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================
+   SKILLS
+========================================= */
+
+.skill-list {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+}
+
+
+.skill {
+
+    border: 1px solid #344050;
+
+    padding: 7px 11px;
+
+    color: #b7bec6;
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================
+   ADVENTURE
+========================================= */
+
+.adventure-text {
+
+    color: #7f8995;
+
+    margin-bottom: 25px;
+
+}
+
+
+.adventure-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+
+}
+
+
+.adventure-grid figure {
+
+    border: 1px solid #344050;
+
+    background: #0d131c;
+
+}
+
+
+.adventure-grid img {
+
+    width: 100%;
+
+    height: 240px;
+
+    display: block;
+
+    object-fit: cover;
+
+}
+
+
+.adventure-grid figcaption {
+
+    padding: 9px 11px;
+
+    color: #788494;
+
+    font-size: 11px;
+
+    border-top: 1px solid #293441;
+
+}
+
+
+/* =========================================
+   PROMPT
+========================================= */
+
+.prompt {
+
+    margin-top: 30px;
+
+}
+
+
+.cursor {
+
+    color: #4da6ed;
+
+    margin-left: 5px;
+
+    animation: blink 1s infinite;
+
+}
+
+
+@keyframes blink {
+
+    0%,
+    45% {
+
+        opacity: 1;
+
+    }
+
+    46%,
+    100% {
+
+        opacity: 0;
+
+    }
+
+}
+
+
+/* =========================================
+   BACK
+========================================= */
+
+.back {
+
+    display: inline-block;
+
+    margin-top: 30px;
+
+    color: #4da6ed;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+}
+
+
+.back:hover {
+
+    color: #ffffff;
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 750px) {
+
+    .page {
+
+        width: 94%;
+
+        padding: 20px 0;
+
+    }
+
+
+    .terminal-body {
+
+        padding: 25px 18px;
+
+    }
+
+
+    .terminal-menu {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    .terminal-title {
+
+        font-size: 10px;
+
+    }
+
+
+    .adventure-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .adventure-grid img {
+
+        height: 220px;
+
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .terminal-menu {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .profile-terminal {
+
+        width: 135px;
+
+    }
+
+
+    .profile h1 {
+
+        font-size: 32px;
+
+    }
+
+}
+
+
+/* =========================================
+   PROJECTS
+========================================= */
+
+.projects-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.project {
+
+    border: 1px solid #344050;
+
+    background: #0d131c;
+
+    padding: 15px;
+
+}
+
+
+.project h3 {
+
+    color: #4da6ed;
+
+    font-size: 15px;
+
+    font-weight: 400;
+
+    margin-bottom: 12px;
+
+}
+
+
+.project img {
+
+    width: 100%;
+
+    height: 200px;
+
+    display: block;
+
+    object-fit: cover;
+
+    border: 1px solid #293441;
+
+}
+
+
+/* =========================================
+   PROJECTS MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .projects-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .project img {
+
+        height: 220px;
+
+    }
+
+}
+
+
+
+/* =========================================
+   EXPERIENCE
+========================================= */
+
+.experience-item {
+
+    border-left: 2px solid #344050;
+
+    padding-left: 18px;
+
+    margin-bottom: 45px;
+
+}
+
+
+.experience-item h3 {
+
+    color: #4da6ed;
+
+    font-size: 17px;
+
+    font-weight: 400;
+
+    margin-bottom: 5px;
+
+}
+
+
+.experience-company {
+
+    color: #e05252;
+
+    font-size: 13px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.experience-description {
+
+    color: #8b949e;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    max-width: 700px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.experience-item img {
+
+    width: 100%;
+
+    max-width: 650px;
+
+    height: 260px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border: 1px solid #344050;
+
+    background: #0d131c;
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .experience-item img {
+
+        height: 220px;
+
+    }
+
+}
+
+
+
+
+/* =========================================
+   CERTIFICATES
+========================================= */
+
+.certificate-item {
+
+    border-left: 2px solid #344050;
+
+    padding-left: 18px;
+
+    margin-bottom: 45px;
+
+}
+
+
+.certificate-item h3 {
+
+    color: #4da6ed;
+
+    font-size: 16px;
+
+    font-weight: 400;
+
+    margin-bottom: 5px;
+
+}
+
+
+.certificate-issuer {
+
+    color: #e05252;
+
+    font-size: 13px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.certificate-item img {
+
+    width: 100%;
+
+    max-width: 650px;
+
+    height: auto;
+
+    display: block;
+
+    border: 1px solid #344050;
+
+    background: #0d131c;
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .certificate-item img {
+
+        max-width: 100%;
+
+    }
+
+}

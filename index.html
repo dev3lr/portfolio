@@ -1,90 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev3's Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" >
+
+    <title>Ayush | Web Developer</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Menu Button -->
-    <div class="menu">
-        <div class="menu-button" onclick="toggleMenu()">☰</div>
-        <div class="menu-content" id="menu-content">
-            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </div>
 
-    <div class="landing">
-        <div class="title-panel">
-            <h2>Dev3's Portfolio</h2>
-        </div>
-        <div class="header-info">
-            <img src="pfp.jpg" alt="Profile Picture" class="profile-pic">
-            <h1 class="name">Ayush Dwivedi</h1>
-        </div>
-        <div class="description">
-            <p>I'm Ayush Dwivedi,an engineering student learning to be a Web and Android developer. I don't have any industry experience but i have worked on some projects in last 2 years it all started with a very stubborn passion to build my own discord bot which made me very curious about developing similar projects.I might not have the best ideas for designing but i do have a passion for building interactive web applications. Let's connect and create something amazing together!</p>
-        </div>
-        <div class="scroll-indicator">Scroll down</div>
-    </div>
+    <main class="container">
 
-    <section class="about" id="about">
-        <div class="container">
-            <p class="info">Age: 18 | College: IILM University | City: New Delhi</p>
-        </div>
-    </section>
+        <section class="profile-section">
 
-    <section class="tools" id="tools">
-        <div class="container">
-            <h2>Tools I've Used</h2>
-            <div class="tools-list">
-                <span class="tool">Android Studio</span>
-                <span class="tool">Visual Studio Code</span>
-                <span class="tool">Github</span>
-                <span class="tool">Mysql Workbench</span>
-                <span class="tool">Flutter</span>
-                <span class="tool">Firebase</span>
-                <!-- Add more tools as needed -->
-            </div>
-        </div>
-    </section>
+            <div class="profile-terminal">
 
-    <section class="projects">
-        <div class="container">
-            <h2>Projects I've Worked On</h2>
-            <div class="project-list">
-                <a href="project1.html" class="project-card">
-                    <div class="icon">
-                        <img src="project1-icon.png" alt="Project 1 Icon">
+                <div class="terminal-bar">
+
+                    <div class="terminal-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
                     </div>
-                    <h3>Project 1</h3>
-                    <p>Short description of Project 1.</p>
-                </a>
-                <a href="project2.html" class="project-card">
-                    <div class="icon">
-                        <img src="project2-icon.png" alt="Project 2 Icon">
-                    </div>
-                    <h3>Project 2</h3>
-                    <p>Short description of Project 2.</p>
-                </a>
-                <!-- Add more projects as needed -->
+
+                    <span class="terminal-name">
+                        profile.jpg
+                    </span>
+
+                </div>
+
+                <div class="profile-image-container">
+
+                    <img
+                        src="profilepic.png"
+                        alt="Ayush profile picture"
+                    >
+
+                </div>
+
             </div>
-        </div>
-    </section>
 
-    <footer id="contact">
-        <p>&copy; 2024 Dev3. All rights reserved.</p>
-    </footer>
 
-    <script>
-        function toggleMenu() {
-            const menuContent = document.getElementById("menu-content");
-            menuContent.classList.toggle("show");
-        }
-    </script>
+            <div class="profile-info">
+
+                <h1>Ayush</h1>
+
+                <h2>
+                    Web Developer
+                    <span>&</span>
+                    Security Enthusiast
+                </h2>
+
+                <p>
+                    Building clean, practical and secure
+                    web experiences.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="main-terminal">
+
+            <div class="terminal-bar">
+
+                <div class="terminal-dots">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+
+                <span class="terminal-name">
+                    ayush@portfolio:~
+                </span>
+
+            </div>
+
+
+            <div class="terminal-content">
+
+
+                <div class="terminal-line">
+
+                    <span class="red-text">
+                        ayush
+                    </span><span class="blue-text">@portfolio</span><span class="white-text">:~$</span>
+
+                    <span class="command">
+                        whoami
+                    </span>
+
+                </div>
+
+
+                <p class="output blue-output">
+                    Ayush
+                </p>
+
+
+
+                <div class="terminal-line about-command">
+
+                    <span class="red-text">
+                        ayush
+                    </span><span class="blue-text">@portfolio</span><span class="white-text">:~$</span>
+
+                    <span class="command">
+                        cat about.txt
+                    </span>
+
+                </div>
+
+
+                <div class="about-text">
+
+                    <p>
+                        I'm a web developer who enjoys building
+                        clean, responsive and functional websites.
+                    </p>
+
+                    <p>
+                        I work with HTML, CSS and JavaScript,
+                        while exploring technologies such as
+                        Reactjs, Node.js and Express.js
+                    </p>
+
+                    <p>
+                        I'm also interested in cybersecurity,
+                        Kali Linux and understanding how systems
+                        work behind the interface.
+                    </p>
+
+                </div>
+
+
+                <div class="terminal-line">
+
+                    <span class="red-text">
+                        ayush
+                    </span><span class="blue-text">@portfolio</span><span class="white-text">:~$</span>
+
+                  
+                </div>
+
+
+                <div class="terminal-line know-more-command">
+
+                    <span class="red-text">
+                        ayush
+                    </span><span class="blue-text">@portfolio</span><span class="white-text">:~$</span>
+
+                    <span class="command">
+                        ./know-more
+                    </span>
+
+                </div>
+
+
+                <a
+                    href="terminal.html"
+                    class="know-more"
+                >
+                    [ KNOW MORE → ]
+                </a>
+
+
+                <!-- PROMPT -->
+
+                <div class="prompt">
+
+                    <span class="red-text">
+                        ayush
+                    </span><span class="blue-text">@portfolio</span><span class="white-text">:~$</span>
+
+                    <span class="cursor">_</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="index.js"></script>
+
 </body>
+
 </html>
