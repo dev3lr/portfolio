@@ -158,10 +158,7 @@ if (panel === "projects") {
                 practical web application security.
             </p>
 
-            <img
-                src="images/experience1.jpg"
-                alt="VAPT Analyst Internship"
-            >
+          
 
         </div>
 
@@ -186,10 +183,7 @@ if (panel === "projects") {
                 functionality.
             </p>
 
-            <img
-                src="images/experience2.jpg"
-                alt="Android Developer Internship"
-            >
+           
 
         </div>
 
@@ -214,10 +208,7 @@ if (panel === "projects") {
                 clearly to users.
             </p>
 
-            <img
-                src="images/experience3.jpg"
-                alt="Web Development for Events"
-            >
+        
 
         </div>
 
@@ -488,16 +479,22 @@ else if (panel === "certificates") {
                     React
                 </span>
 
+ 
+
                 <span class="skill">
-                    Next.js
+                 Linux
                 </span>
 
                 <span class="skill">
-                    Express.js
+                 Nmap
                 </span>
 
                 <span class="skill">
-                    Linux
+                 Osint 
+                </span>
+
+                <span class="skill">
+                 Dorking
                 </span>
 
                 <span class="skill">
@@ -505,7 +502,31 @@ else if (panel === "certificates") {
                 </span>
 
                 <span class="skill">
-                    Nginx
+                    Firebase Console
+                </span>
+
+                <span class="skill">
+                 Siem (XDR,EDR,Soar)
+                </span>
+
+                <span class="skill">
+                 Apache
+                </span>
+
+                <span class="skill">
+                 NginX
+                </span>
+
+                <span class="skill">
+                 Promt Engineering
+                </span>
+
+                <span class="skill">
+                 Owasp top 10
+                </span>
+
+                <span class="skill">
+                 Vunerability Assessment
                 </span>
 
                 <span class="skill">
